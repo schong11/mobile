@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class MakeBasket : MonoBehaviour
 {
-    //AudioSource audioData;
-    void Start()
-    {
-        //audioData = GetComponent<AudioSource>();
-    }
+    public AudioSource BasketMade;
 
+    // Method to play the sound
     public GameObject Sphere;
     // Update is called once per frame
     void OnCollisionEnter(Collision collision)
@@ -18,8 +15,18 @@ public class MakeBasket : MonoBehaviour
         if (collision.gameObject.name == "Sphere");
         {
             //If the GameObject's name matches the one you suggest, output this message in the console
-            Instantiate(Sphere,transform.position,Quaternion.identity);
-            //audioData.Play(0);
+            // Instantiate(Sphere,transform.position,Quaternion.identity);
+            BasketMade.Stop();
+            BasketMade.Play();
+        }
+    }
+    void OnTriggerEnter(Collider collision) {
+        if (collision.gameObject.name == "Sphere");
+        {
+            //If the GameObject's name matches the one you suggest, output this message in the console
+            // Instantiate(Sphere,transform.position,Quaternion.identity);
+            BasketMade.Stop();
+            BasketMade.Play();
         }
     }
 }

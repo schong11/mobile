@@ -83,6 +83,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -4668,7 +4672,7 @@ ScriptsOnlyBuild:
     className: SpawnerScript
   - hash:
       serializedVersion: 2
-      Hash: 84b40cfb5c279e1023fedfbe00b4414a
+      Hash: 108328593df11234aca19030d55133e5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MakeBasket
