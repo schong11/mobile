@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Backboard
+  - Rim
+  - Floor
+  - ThrowTracker
+  - Ball
   layers:
   - Default
   - TransparentFX

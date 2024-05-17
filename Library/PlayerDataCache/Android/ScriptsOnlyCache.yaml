@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BallTracker
     - MakeBasket
     - OVRTouchSample.Hand
     - OVRTouchSample.HandPose
@@ -30,9 +31,6 @@ ScriptsOnlyBuild:
     - OVRScreenFade
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.VisualScripting.Core.dll:
-    - Unity.VisualScripting.SceneVariables
-    - Unity.VisualScripting.Variables
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     Unity.XR.Management.dll:
@@ -48,8 +46,6 @@ ScriptsOnlyBuild:
   serializedClasses:
     Oculus.VR.Editor:
     - Assets.Oculus.VR.Editor.AssetConfigList
-    Unity.VisualScripting.Core:
-    - Unity.VisualScripting.SerializationData
   methodsToPreserve: []
   sceneClasses:
     Assets/asdf.unity:
@@ -116,8 +112,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5592}
     - Class: 114
-      Script: {instanceID: 6998}
-    - Class: 114
       Script: {instanceID: 7626}
     - Class: 114
       Script: {instanceID: 7826}
@@ -132,8 +126,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9492}
     - Class: 114
-      Script: {instanceID: 10036}
-    - Class: 114
       Script: {instanceID: 10402}
     - Class: 114
       Script: {instanceID: 11316}
@@ -145,6 +137,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 30258}
     - Class: 114
       Script: {instanceID: 38908}
+    - Class: 114
+      Script: {instanceID: 68584}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -4666,7 +4660,7 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 84b40cfb5c279e1023fedfbe00b4414a
+      Hash: dca56a2f0b30bde45d694d5d2d2643da
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnerScript
@@ -4676,6 +4670,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MakeBasket
+  - hash:
+      serializedVersion: 2
+      Hash: dd9eaa42b0dc9e77de99ce00bf639bad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BallTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SphereDelete
   platform: 13
   scenePathNames:
   - Assets/asdf.unity
